@@ -1,0 +1,12 @@
+diff -urN aa/gnome2-user-docs-2.8.0/gnome2-user-guide/C/gosoverview.xml gnome2-user-docs-2.8.0/gnome2-user-guide/C/gosoverview.xml
+--- aa/gnome2-user-docs-2.8.0/gnome2-user-guide/C/gosoverview.xml	2004-09-14 05:21:00.000000000 +0200
++++ gnome2-user-docs-2.8.0/gnome2-user-guide/C/gosoverview.xml	2004-09-17 14:43:55.302386776 +0200
+@@ -743,7 +743,7 @@
+       </varlistentry>
+       <varlistentry>
+         <term>Open special <firstterm>Uniform Resource Identifiers</firstterm>
+-        (URIs)</term
++        (URIs)</term>
+         <listitem><para>The GNOME Desktop contains special URIs that enable
+         you to access particular functions from the file manager. For example,
+         to access the preference tools, you can access the
