@@ -2,22 +2,16 @@ Summary:	General GNOME User Documentation
 Summary(pl):	Ogólna dokumentacja u¿ytkownika GNOME
 Name:		gnome2-user-docs
 Version:	2.0.1
-Release:	1
+Release:	2
 License:	GFDL
 Group:		Documentation
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/2.0/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-xml.patch
 Requires(post,postun):scrollkeeper >= 0.3.11-4
-Requires:	yelp >= 1.0.6
+Requires:	yelp >= 2.1.2-4
 BuildRequires:	scrollkeeper >= 0.3.11-4
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
-%define         _sysconfdir     /etc/X11/GNOME2
-%define         _gtkdocdir      %{_defaultdocdir}/gtk-doc/html
-%define		_omf_dest_dir	%(scrollkeeper-config --omfdir)
 
 %description
 General GNOME User Guide.
