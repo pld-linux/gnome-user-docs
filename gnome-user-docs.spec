@@ -1,7 +1,7 @@
 Summary:	General GNOME User Documentation
 Summary(pl):	Ogólna dokumentacja u¿ytkownika GNOME
 Name:		gnome2-user-docs
-Version:	2.0.2
+Version:	2.0.3
 Release:	1
 License:	GFDL
 Group:		Documentation
