@@ -5,10 +5,12 @@ Version:	2.0.1
 Release:	1
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/2.0.2/sources/%{name}/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/2.0/%{name}-%{version}.tar.bz2
+Patch0:		%{name}-xml.patch
 Requires(post,postun):scrollkeeper >= 0.3.11-4
 Requires:	yelp >= 1.0.6
 BuildRequires:	scrollkeeper >= 0.3.11-4
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -25,6 +27,7 @@ Ogólna dokumentacja u¿ytkownika GNOME.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure2_13 \
