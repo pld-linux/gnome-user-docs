@@ -1,15 +1,14 @@
 Summary:	General GNOME User Documentation
 Summary(pl):	Ogólna dokumentacja u¿ytkownika GNOME
 Name:		gnome2-user-docs
-Version:	2.0.6
+Version:	2.4.0
 Release:	1
 License:	GFDL
 Group:		Documentation
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/2.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	78eefb360be381d34dcb1a98a3be5ff7
-Requires(post,postun):scrollkeeper >= 0.3.11-4
-Requires:	yelp >= 2.2.0
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/2.4/%{name}-%{version}.tar.bz2
+# Source0-md5:	76a72340cc012148ed822857b1c7cf28
 BuildRequires:	scrollkeeper >= 0.3.11-4
+Requires:	yelp >= 2.3.90
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,7 +22,7 @@ Ogólna dokumentacja u¿ytkownika GNOME.
 %setup -q
 
 %build
-%configure2_13 \
+%configure \
 	--with-html-path=%{_gtkdocdir}
 
 %{__make}
@@ -41,13 +40,11 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post
-scrollkeeper-update
+%post -p /usr/bin/scrollkeeper-update
 
-%postun
-scrollkeeper-update
+%postun -p /usr/bin/scrollkeeper-update
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog
+%doc AUTHORS ChangeLog README
 %{_omf_dest_dir}/%{name}
