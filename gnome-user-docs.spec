@@ -2,13 +2,11 @@ Summary:	General GNOME User Documentation
 Summary(pl):	Ogólna dokumentacja u¿ytkownika GNOME
 Name:		gnome2-user-docs
 Version:	2.8.0
-Release:	2
+Release:	3
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.8/%{name}-%{version}.tar.bz2
-# Source0-md5:	a63d5eb67aa033a925d23f9af1a0991a
-Patch0:		%{name}-access_guide_fix.patch
-Patch1:		%{name}-user_guide_typo.patch
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.8/%{name}-%{version}-1.tar.bz2
+# Source0-md5:	d7ba96c3a5300751f812fe69ceedcec3
 BuildRequires:	scrollkeeper >= 0.3.11-4
 Requires:	yelp >= 2.6.3
 BuildArch:	noarch
@@ -21,9 +19,7 @@ General GNOME User Guide.
 Ogólna dokumentacja u¿ytkownika GNOME.
 
 %prep
-%setup -q
-%patch0 -p1
-%patch1 -p1
+%setup -q -n %{name}-%{version}-1
 
 %build
 %configure
