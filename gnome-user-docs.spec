@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl):	Ogólna dokumentacja u¿ytkownika GNOME
 Name:		gnome2-user-docs
-Version:	2.6.0
+Version:	2.6.0.1
 Release:	1
 License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.6/%{name}-%{version}.tar.bz2
-# Source0-md5:	4cb05dd312aaf0cd000a9741274f8b47
+# Source0-md5:	8125558f7f515b681fdeb853adf06ebb
 BuildRequires:	scrollkeeper >= 0.3.11-4
 Requires:	yelp >= 2.6.0
 BuildArch:	noarch
