@@ -1,0 +1,25 @@
+diff -urN aa/gnome2-user-docs-2.8.0/gnome2-accessibility-guide/C/gnome-access-guide.xml gnome2-user-docs-2.8.0/gnome2-accessibility-guide/C/gnome-access-guide.xml
+--- aa/gnome2-user-docs-2.8.0/gnome2-accessibility-guide/C/gnome-access-guide.xml	2004-09-14 00:23:44.000000000 +0200
++++ gnome2-user-docs-2.8.0/gnome2-accessibility-guide/C/gnome-access-guide.xml	2004-09-17 14:36:00.181616112 +0200
+@@ -107,5 +107,4 @@
+ &accessintro;
+ &dtconfig;
+ &keynav;
+-&themes;
+-&troubleshooting;</book> 
++&themes;</book> 
+diff -urN aa/gnome2-user-docs-2.8.0/gnome2-accessibility-guide/C/preface.xml gnome2-user-docs-2.8.0/gnome2-accessibility-guide/C/preface.xml
+--- aa/gnome2-user-docs-2.8.0/gnome2-accessibility-guide/C/preface.xml	2004-09-14 00:23:44.000000000 +0200
++++ gnome2-user-docs-2.8.0/gnome2-accessibility-guide/C/preface.xml	2004-09-17 14:36:11.236935448 +0200
+@@ -33,11 +33,6 @@
+ to change the appearance of the GNOME Desktop to enhance the accessibility of the desktop for users with
+ visual impairments.</para>
+         </listitem>
+-        <listitem>
+-          <para><xref linkend="troubleshooting-0"/> describes some system administrator
+-and user tasks that you need to perform before you can use the assistive technologies
+-for the GNOME Desktop.</para>
+-        </listitem>
+       </itemizedlist>
+     </sect1>
+     <sect1 id="preface-3">
