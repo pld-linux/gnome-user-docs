@@ -1,0 +1,11 @@
+diff -Nru gnome2-user-docs-2.0.1.orig/introduction-to-gnome/C/introduction-to-gnome.xml gnome2-user-docs-2.0.1/introduction-to-gnome/C/introduction-to-gnome.xml
+--- gnome2-user-docs-2.0.1.orig/introduction-to-gnome/C/introduction-to-gnome.xml	Wed Sep 11 00:12:13 2002
++++ gnome2-user-docs-2.0.1/introduction-to-gnome/C/introduction-to-gnome.xml	Thu Oct 24 09:11:44 2002
+@@ -1352,6 +1352,7 @@
+                   <application>Gnumeric</application>,
+                   a full-featured Excel-compatible spreadsheet.
+             </para>
++	  </listitem>
+         <!-- Hopefully I did the formatting is corrrectly. -->
+ 	</varlistentry>
+ 
