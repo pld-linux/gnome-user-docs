@@ -2,12 +2,14 @@ Summary:	General GNOME User Documentation
 Summary(pl):	Ogólna dokumentacja u¿ytkownika GNOME
 Name:		gnome2-user-docs
 Version:	2.8.1
-Release:	1
+Release:	2
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.8/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome2-user-docs/2.8/%{name}-%{version}.tar.bz2
 # Source0-md5:	90bdd21ea3e3e794f641dd805216f275
+BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper >= 0.3.11-4
+Requires(post,postun):	scrollkeeper
 Requires:	yelp >= 2.6.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -38,8 +40,11 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -p /usr/bin/scrollkeeper-update
-%postun -p /usr/bin/scrollkeeper-update
+%post
+%scrollkeeper_update_post
+
+%postun
+%scrollkeeper_update_postun
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
