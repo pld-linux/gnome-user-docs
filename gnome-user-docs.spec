@@ -7,10 +7,10 @@ License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-user-docs/2.14/%{name}-%{version}.tar.bz2
 # Source0-md5:	1b258d00f4b9ed0cae9e6c9ea06c55b8
+BuildRequires:	gnome-doc-utils >= 0.5.6
 BuildRequires:	libxslt-progs
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper >= 0.3.11-4
-BuildRequires:	gnome-doc-utils >= 0.5.6
 Requires(post,postun):	scrollkeeper
 Requires:	yelp >= 2.6.3
 BuildArch:	noarch
