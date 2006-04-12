@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl):	Ogólna dokumentacja u¿ytkownika GNOME
 Name:		gnome-user-docs
-Version:	2.14.1
+Version:	2.14.2
 Release:	1
 License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-user-docs/2.14/%{name}-%{version}.tar.bz2
-# Source0-md5:	ff144dba5a50b24bf7b94ecd4fc2d61c
+# Source0-md5:	4f5a7114ccf9e4e31137da50b7333570
 BuildRequires:	gnome-doc-utils >= 0.5.6
 BuildRequires:	libxslt-progs
 BuildRequires:	rpmbuild(macros) >= 1.197
