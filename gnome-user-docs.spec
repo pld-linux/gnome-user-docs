@@ -1,18 +1,18 @@
 Summary:	General GNOME User Documentation
 Summary(pl):	Ogólna dokumentacja u¿ytkownika GNOME
 Name:		gnome-user-docs
-Version:	2.15.1
+Version:	2.16.0
 Release:	1
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-user-docs/2.15/%{name}-%{version}.tar.bz2
-# Source0-md5:	cfe8a798760fafa138ac318bbd411319
-BuildRequires:	gnome-doc-utils >= 0.7.2
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-user-docs/2.16/%{name}-%{version}.tar.bz2
+# Source0-md5:	3910315dce78d7eeebda862bf698389b
+BuildRequires:	gnome-doc-utils >= 0.8.0
 BuildRequires:	libxslt-progs
 BuildRequires:	rpmbuild(macros) >= 1.311
 BuildRequires:	scrollkeeper >= 0.3.11-4
 Requires(post,postun):	scrollkeeper
-Requires:	yelp >= 2.15.91
+Requires:	yelp >= 2.16.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -71,6 +71,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_omf_dest_dir}/user-guide/user-guide-C.omf
 %lang(bg) %{_omf_dest_dir}/user-guide/user-guide-bg.omf
 %lang(es) %{_omf_dest_dir}/user-guide/user-guide-es.omf
+%lang(fr) %{_omf_dest_dir}/user-guide/user-guide-fr.omf
 %lang(it) %{_omf_dest_dir}/user-guide/user-guide-it.omf
 %lang(pt_BR) %{_omf_dest_dir}/user-guide/user-guide-pt_BR.omf
+%lang(ru) %{_omf_dest_dir}/user-guide/user-guide-ru.omf
 %lang(zh_CN) %{_omf_dest_dir}/user-guide/user-guide-zh_CN.omf
