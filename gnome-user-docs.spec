@@ -1,5 +1,5 @@
 Summary:	General GNOME User Documentation
-Summary(pl):	OgÛlna dokumentacja uøytkownika GNOME
+Summary(pl.UTF-8):   Og√≥lna dokumentacja u≈ºytkownika GNOME
 Name:		gnome-user-docs
 Version:	2.16.1
 Release:	1
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 General GNOME User Guide.
 
-%description -l pl
-OgÛlna dokumentacja uøytkownika GNOME.
+%description -l pl.UTF-8
+Og√≥lna dokumentacja u≈ºytkownika GNOME.
 
 %prep
 %setup -q
