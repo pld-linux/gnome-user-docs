@@ -1,5 +1,5 @@
 Summary:	General GNOME User Documentation
-Summary(pl.UTF-8):   Ogólna dokumentacja użytkownika GNOME
+Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
 Version:	2.16.1
 Release:	1
