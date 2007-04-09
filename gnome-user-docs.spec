@@ -1,18 +1,18 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	2.18.0
+Version:	2.18.1
 Release:	1
 License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-user-docs/2.18/%{name}-%{version}.tar.bz2
-# Source0-md5:	a2561b2c99325fa9f9fdf92c035ae2ad
+# Source0-md5:	6609f37ff3f1a8be1c7eac07008a75f7
 BuildRequires:	gnome-doc-utils >= 0.10.1
 BuildRequires:	libxslt-progs
 BuildRequires:	rpmbuild(macros) >= 1.311
 BuildRequires:	scrollkeeper >= 0.3.11-4
 Requires(post,postun):	scrollkeeper
-Requires:	yelp >= 2.16.1
+Requires:	yelp >= 2.18.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
