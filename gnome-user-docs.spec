@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	2.18.1
+Version:	2.18.2
 Release:	1
 License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-user-docs/2.18/%{name}-%{version}.tar.bz2
-# Source0-md5:	6609f37ff3f1a8be1c7eac07008a75f7
+# Source0-md5:	4d3b5c8bd3cc8008f2a44d98efaa2502
 BuildRequires:	gnome-doc-utils >= 0.10.1
 BuildRequires:	libxslt-progs
 BuildRequires:	rpmbuild(macros) >= 1.311
@@ -80,7 +80,9 @@ rm -rf $RPM_BUILD_ROOT
 %lang(es) %{_omf_dest_dir}/user-guide/user-guide-es.omf
 %lang(fr) %{_omf_dest_dir}/user-guide/user-guide-fr.omf
 %lang(it) %{_omf_dest_dir}/user-guide/user-guide-it.omf
+%lang(ko) %{_omf_dest_dir}/user-guide/user-guide-ko.omf
 %lang(pa) %{_omf_dest_dir}/user-guide/user-guide-pa.omf
+%lang(pt) %{_omf_dest_dir}/user-guide/user-guide-pt.omf
 %lang(pt_BR) %{_omf_dest_dir}/user-guide/user-guide-pt_BR.omf
 %lang(ru) %{_omf_dest_dir}/user-guide/user-guide-ru.omf
 %lang(sv) %{_omf_dest_dir}/user-guide/user-guide-sv.omf
