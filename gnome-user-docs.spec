@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	2.20.0
+Version:	2.20.1
 Release:	1
 License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/2.20/%{name}-%{version}.tar.bz2
-# Source0-md5:	60a2b6267f1f6ef7b7f1a6c706d7b938
+# Source0-md5:	d6bba44acaed20117769ec8dce378f71
 BuildRequires:	gnome-doc-utils >= 0.12.0
 BuildRequires:	libxslt-progs
 BuildRequires:	rpmbuild(macros) >= 1.311
@@ -60,6 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 # access guide
 %{_omf_dest_dir}/gnome-access-guide/gnome-access-guide-C.omf
 %lang(de) %{_omf_dest_dir}/gnome-access-guide/gnome-access-guide-de.omf
+%lang(el) %{_omf_dest_dir}/gnome-access-guide/gnome-access-guide-el.omf
 %lang(en_GB) %{_omf_dest_dir}/gnome-access-guide/gnome-access-guide-en_GB.omf
 %lang(es) %{_omf_dest_dir}/gnome-access-guide/gnome-access-guide-es.omf
 %lang(fr) %{_omf_dest_dir}/gnome-access-guide/gnome-access-guide-fr.omf
