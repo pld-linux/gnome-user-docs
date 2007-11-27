@@ -9,8 +9,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/2.20/%{name}-%{v
 # Source0-md5:	d6bba44acaed20117769ec8dce378f71
 BuildRequires:	gnome-doc-utils >= 0.12.0
 BuildRequires:	libxslt-progs
-# support for --with-omf in find_lang.sh
-BuildRequires:	rpm-build >= 4.4.9-10
+BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.311
 BuildRequires:	scrollkeeper >= 0.3.11-4
 Requires(post,postun):	scrollkeeper
