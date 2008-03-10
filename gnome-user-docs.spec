@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	2.20.1
-Release:	2
+Version:	2.22.0
+Release:	1
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/2.20/%{name}-%{version}.tar.bz2
-# Source0-md5:	d6bba44acaed20117769ec8dce378f71
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/2.22/%{name}-%{version}.tar.bz2
+# Source0-md5:	f3af808e754701b83105eab2f5ca690c
 BuildRequires:	gnome-doc-utils >= 0.12.0
 BuildRequires:	libxslt-progs
 BuildRequires:	rpmbuild(find_lang) >= 1.23
@@ -30,7 +30,7 @@ Ogólna dokumentacja użytkownika GNOME.
 %{__gnome_doc_prepare}
 %configure \
 	 --disable-scrollkeeper
-%{__make}
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
