@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	2.22.0
+Version:	2.22.1
 Release:	1
 License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/2.22/%{name}-%{version}.tar.bz2
-# Source0-md5:	f3af808e754701b83105eab2f5ca690c
+# Source0-md5:	5986727ea52dfbaa7293383e474a3f2d
 BuildRequires:	gnome-doc-utils >= 0.12.0
 BuildRequires:	libxslt-progs
 BuildRequires:	rpmbuild(find_lang) >= 1.23
