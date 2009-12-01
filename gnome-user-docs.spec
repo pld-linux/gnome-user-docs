@@ -7,8 +7,13 @@ License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/2.28/%{name}-%{version}.tar.bz2
 # Source0-md5:	7aa5a691744e2447276728c7e466b3d5
+BuildRequires:	docbook-dtd412-xml
+BuildRequires:	docbook-dtd43-xml
+BuildRequires:	gettext-devel
 BuildRequires:	gnome-doc-utils >= 0.12.0
+BuildRequires:	libxml2-progs
 BuildRequires:	libxslt-progs
+BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.311
 BuildRequires:	scrollkeeper >= 0.3.11-4
