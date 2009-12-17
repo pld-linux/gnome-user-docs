@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	2.28.1
+Version:	2.28.2
 Release:	1
 License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/2.28/%{name}-%{version}.tar.bz2
-# Source0-md5:	7aa5a691744e2447276728c7e466b3d5
+# Source0-md5:	f9a5ed2c914cabb0d69b5fe2d527485e
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	gettext-devel
@@ -35,7 +35,7 @@ Ogólna dokumentacja użytkownika GNOME.
 %{__gnome_doc_prepare}
 %configure \
 	 --disable-scrollkeeper
-%{__make} -j1
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
