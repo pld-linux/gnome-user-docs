@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	2.32.0
+Version:	3.0.0
 Release:	1
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/2.32/%{name}-%{version}.tar.bz2
-# Source0-md5:	3db5efe72b17f123d402912bd3fb39c1
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.0/%{name}-%{version}.tar.bz2
+# Source0-md5:	55cf5d403489be90df5efb1315156be5
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	gettext-devel
@@ -18,7 +18,7 @@ BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.311
 BuildRequires:	scrollkeeper >= 0.3.11-4
 Requires(post,postun):	scrollkeeper
-Requires:	yelp >= 2.20.0
+Requires:	yelp >= 3.0.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
