@@ -1,24 +1,24 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	3.0.4
+Version:	3.2.0.1
 Release:	1
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	ba54b09d9ce2f8cbf83b5fa01a77cc0f
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.2/%{name}-%{version}.tar.xz
+# Source0-md5:	ee212e2e6ff9541ae46ab01a759148f9
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	gettext-devel
-BuildRequires:	gnome-doc-utils >= 0.12.0
+BuildRequires:	itstool
 BuildRequires:	libxml2-progs
-BuildRequires:	libxslt-progs
 BuildRequires:	pkgconfig
-BuildRequires:	rpmbuild(find_lang) >= 1.23
+BuildRequires:	rpmbuild(find_lang) >= 1.35
 BuildRequires:	rpmbuild(macros) >= 1.311
-BuildRequires:	scrollkeeper >= 0.3.11-4
-Requires(post,postun):	scrollkeeper
-Requires:	yelp >= 3.0.0
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	xz
+BuildRequires:	yelp-tools >= 3.2.0
+Requires:	yelp >= 3.2.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,10 +32,9 @@ Ogólna dokumentacja użytkownika GNOME.
 %setup -q
 
 %build
-%{__gnome_doc_prepare}
 %configure \
-	 --disable-scrollkeeper
-%{__make}
+	--disable-silent-rules
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -43,17 +42,11 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%find_lang %{name} --with-gnome --with-omf --all-name
+%find_lang gnome-help --with-gnome
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post
-%scrollkeeper_update_post
-
-%postun
-%scrollkeeper_update_postun
-
-%files -f %{name}.lang
+%files -f gnome-help.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README
