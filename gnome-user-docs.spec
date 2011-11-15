@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	3.2.1
+Version:	3.2.2
 Release:	1
 License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.2/%{name}-%{version}.tar.xz
-# Source0-md5:	51182e15701fb4a9dc3f5ce3a779ae7a
+# Source0-md5:	a84fae0544d01df746c2ab8fcee84cda
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	gettext-devel
