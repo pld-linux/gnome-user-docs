@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	3.4.2
+Version:	3.6.0
 Release:	1
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.4/%{name}-%{version}.tar.xz
-# Source0-md5:	9b8449119a2adb33bd8e6318f5f4a6c7
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.6/%{name}-%{version}.tar.xz
+# Source0-md5:	dfe6505685b2bff4e5634873eebc9e39
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	gettext-devel
@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%find_lang gnome-help --with-gnome
+%find_lang gnome-help --with-gnome --all-name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
