@@ -9,7 +9,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.12/%{name}-%{v
 # Source0-md5:	b754198a54e91e8b612095bd4527da26
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd43-xml
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	itstool
 BuildRequires:	libxml2-progs
 BuildRequires:	pkgconfig
