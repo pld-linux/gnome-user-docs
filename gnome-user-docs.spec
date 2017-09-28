@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	3.24.0
+Version:	3.26.0.1
 Release:	1
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.24/%{name}-%{version}.tar.xz
-# Source0-md5:	1c73b32bf963a6925af220c0d5e68b3e
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.26/%{name}-%{version}.tar.xz
+# Source0-md5:	259c6a49cb76641a6af55a3c52ccb88f
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	gettext-tools
