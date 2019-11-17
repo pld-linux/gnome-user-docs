@@ -1,12 +1,13 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	3.26.1.1
+Version:	3.34.1
 Release:	1
-License:	GFDL
+License:	CC-BY v3.0
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.26/%{name}-%{version}.tar.xz
-# Source0-md5:	feba73d9953b577bb7d23784dbb67315
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.34/%{name}-%{version}.tar.xz
+# Source0-md5:	4f88ae56322dc2c9042d98d853aefaa6
+URL:		https://wiki.gnome.org/DocumentationProject
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	gettext-tools
@@ -34,6 +35,7 @@ Ogólna dokumentacja użytkownika GNOME.
 %build
 %configure \
 	--disable-silent-rules
+
 %{__make} -j1
 
 %install
@@ -42,6 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# gnome-help and system-admin-guide
 %find_lang gnome-help --with-gnome --all-name
 
 %clean
@@ -49,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f gnome-help.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README
+%doc COPYING NEWS README
