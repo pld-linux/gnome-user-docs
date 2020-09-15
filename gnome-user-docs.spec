@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	3.36.6
+Version:	3.38.0
 Release:	1
 License:	CC-BY v3.0
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.36/%{name}-%{version}.tar.xz
-# Source0-md5:	92cdb382830cadcb4958d920c6ec46ad
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-user-docs/3.38/%{name}-%{version}.tar.xz
+# Source0-md5:	863072ff965ab0cada99725ec5ca6bb6
 URL:		https://wiki.gnome.org/DocumentationProject
 BuildRequires:	rpmbuild(find_lang) >= 1.35
 BuildRequires:	rpmbuild(macros) >= 1.311
