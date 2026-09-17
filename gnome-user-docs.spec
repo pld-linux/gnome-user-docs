@@ -1,12 +1,12 @@
 Summary:	General GNOME User Documentation
 Summary(pl.UTF-8):	Ogólna dokumentacja użytkownika GNOME
 Name:		gnome-user-docs
-Version:	50.4
+Version:	50.5
 Release:	1
 License:	CC-BY v3.0
 Group:		Documentation
 Source0:	https://download.gnome.org/sources/gnome-user-docs/50/%{name}-%{version}.tar.xz
-# Source0-md5:	d629c3a0542d3a7403259e6a695cc477
+# Source0-md5:	80bca85ff148f3311d95e9ce64d7c04a
 URL:		https://wiki.gnome.org/DocumentationProject
 BuildRequires:	rpmbuild(find_lang) >= 1.35
 BuildRequires:	rpmbuild(macros) >= 1.311
